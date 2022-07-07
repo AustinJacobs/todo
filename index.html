@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Simple TODO</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Todos</h1>
+        </header>
+        <main>
+            <ul class="todos">
+
+            </ul>
+            <div class="task_stats">
+                <p class="left"><span id="items_left">0</span> tasks left</p>
+                <div class="filter">
+                    <button id="all" class="on">All</button>
+                    <button id="active">Active</button>
+                    <button id="completed">Completed</button>
+                </div>
+            </div>
+            <div id="position">
+                <div class="task_text_div">
+                    <input type="text" class="task_text" id="user_task_text" placeholder="Create a new todo..."
+                        spellcheck="true" required autofocus autocomplete="on" />
+                    <button class="addBtn" id="add_button">+</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/initilaize.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #212121;
+}
+
+header>h1 {
+    text-align: center;
+    color: white;
+    font-size: 3em;
+}
+
+ul {
+    padding: 0;
+}
+
+.checked {
+    text-decoration: line-through;
+}
+
+.todos_div {
+    display: grid;
+    grid-template-columns: 15% 1fr 15%;
+    align-items: center;
+    background-color: #ed3143;
+    color: white;
+    font-size: 20px;
+    margin: 0 10px 0 10px;
+    max-width: 100%;
+    border: 3px solid #212121;
+    padding: 5px;
+    border-radius: 10px;
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.todos_words {
+    margin: 10px;
+}
+
+.close {
+    background-color: transparent;
+    border: none;
+    color: white;
+    justify-self: center;
+}
+
+.checkboxes {
+    transform: scale(1.8);
+    justify-self: center;
+}
+
+.task_stats {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 1fr;
+    background-color: #3d3d3d;
+    margin: -17px 10px 0 10px;
+    border: 3px solid #212121;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.filter {
+    display: grid;
+    grid-template-columns: 15% 35% 40%;
+    gap: 5px;
+    justify-content: left;
+    align-items: center;
+}
+
+.filter>button {
+    padding: 0;
+    margin: 0;
+    height: 30px;
+    background-color: #ed3143;
+    color: white;
+    border: none;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.left {
+    grid-column: 1/2;
+    justify-self: left;
+    align-self: center;
+    padding-left: 15px;
+    font-size: 14px;
+}
+
+#position {
+    position: fixed;
+    bottom: 30px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    max-width: 680px;
+}
+
+.task_text_div {
+    display: grid;
+    grid-template-columns: 1fr 15%;
+    margin: 0 10px 0 10px;
+    height: 40px;
+}
+
+.task_text_div>input {
+    border: 1px solid #212121;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.task_text_div>button {
+    font-size: 30px;
+    width: 50px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.add_button_div {
+    justify-self: end;
+}
+
+#add_button {
+    padding: 5px;
+    margin: 0;
+    align-self: center;
+    border: 1px solid #ed3143;
+    width: 100%;
+    color: white;
+    background-color: #ed3143;
+}
+
+.filter .on {
+    border: 1px solid white;
+    background-color: #ed3143;
+}
